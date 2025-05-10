@@ -20,6 +20,7 @@ Zadání 6: Pokud uživatel správně vyplnil obě pole, do stavu `error` nastav
 export const Ukol4 = () => {
   const [login, setLogin] = useState('');
   const [heslo, setHeslo] = useState('');
+  const [error, setError] = useState('');
   const prihlaseni = {
     login: login,
     password: heslo,
@@ -27,7 +28,7 @@ export const Ukol4 = () => {
 
   return (
     <>
-      <div className="error"></div>
+      <div className="error">{error}</div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
