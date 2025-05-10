@@ -35,6 +35,9 @@ export const Ukol4 = () => {
           console.log(prihlaseni);
           login === '' && setError('Chybí login.');
           heslo === '' && setError('Chybí heslo.');
+          login !== '' &&
+            heslo !== '' &&
+            setError('Přihlášení proběhlo úspěšně.');
         }}
       >
         <div className="field">
