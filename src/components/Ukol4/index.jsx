@@ -33,6 +33,8 @@ export const Ukol4 = () => {
         onSubmit={(e) => {
           e.preventDefault();
           console.log(prihlaseni);
+          login === '' && setError('Chybí login.');
+          heslo === '' && setError('Chybí heslo.');
         }}
       >
         <div className="field">
